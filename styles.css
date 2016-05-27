@@ -62,6 +62,7 @@ body, a:link, a:visited, a:active{
 .imageDancer:hover {
   transform: rotate(90deg);
   border: 2px solid red;
+
 }
 
 .lineUpButton {
@@ -70,4 +71,20 @@ body, a:link, a:visited, a:active{
   background-color: blue;
   color: white;
   border: 3 solid lightgrey;
+}
+
+.flippingDancer{
+  width: 44px;
+  height: 44px;
+  background-color: orange;
+  position:absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  perspective: 600;
+}
+
+.flippingDancer:hover {
+  transform: rotateY(180deg);
+  background-color: cornsilk;
 }
