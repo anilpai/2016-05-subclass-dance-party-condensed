@@ -30,6 +30,17 @@ body, a:link, a:visited, a:active{
   border-color: white;
 }
 
+.rotatingDancer {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  position:absolute;
+}
+
+.rotatingDancer:hover {
+  background-color: white;
+}
+
 .movableDancer{
   border:10px solid yellow;
   border-radius:10px;
