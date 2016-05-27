@@ -26,12 +26,19 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+.dancer:hover{
+  border-color: white;
+}
+
 .movableDancer{
   border:10px solid yellow;
   border-radius:10px;
   position:absolute;
 }
 
+.movableDancer:hover {
+  border-color: white;
+}
 
 .imageDancer {
   position: absolute;
@@ -39,6 +46,11 @@ body, a:link, a:visited, a:active{
   height: 120px;
   background-image: url('src/cat.gif');
   background-size: contain;
+}
+
+.imageDancer:hover {
+  transform: rotate(90deg);
+  border: 2px solid red;
 }
 
 .lineUpButton {
