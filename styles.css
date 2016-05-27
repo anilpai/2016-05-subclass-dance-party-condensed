@@ -28,8 +28,8 @@ body, a:link, a:visited, a:active{
 
 .imageDancer {
   position: absolute;
+  width:80px;
+  height: 120px;
+  background-image: url('src/cat.gif');
   background-size: contain;
-  width:200px;
-  height:500px;
-  background: url('src/cat.gif') no-repeat center center;
 }

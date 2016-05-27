@@ -28,5 +28,18 @@ $(document).ready(function(){
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+  });
+
+  $(".lineUpButton").on("click", function() {
+    var topPosition = 0;
+    for(var i=0; i<window.dancers.length; ++i) {
+      topPosition += window.dancers[i].top;
+    }
+    topPosition /= window.dancers.length;
+
+    for(var i=0; i<window.dancers.length; ++i) {
+      window.dancers[i].lineUp(topPosition);
+    }    
   });
 });
