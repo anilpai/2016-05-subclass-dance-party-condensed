@@ -25,3 +25,11 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.imageDancer {
+  position: absolute;
+  background-size: contain;
+  width:200px;
+  height:500px;
+  background: url('src/cat.gif') no-repeat center center;
+}
