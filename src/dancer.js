@@ -9,7 +9,7 @@ var Dancer = function(top, left, timeBetweenSteps, className){
 
 
 Dancer.prototype.step = function(){
-  setTimeout(this.step.bind(this), this.timeBetweenSteps);
+  setTimeout(()=>this.step(), this.timeBetweenSteps);
 };
 
 Dancer.prototype.lineUp = function(topPosition) {  

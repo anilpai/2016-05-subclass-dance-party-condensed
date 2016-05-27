@@ -10,7 +10,5 @@ RotatingDancer.prototype.constructor = RotatingDancer;
 RotatingDancer.prototype.step = function(){
   Dancer.prototype.step.call(this);
   this.rotationDegree = (this.rotationDegree + this.rotationInterval)%360;
-  if(this.$node && this.$node[0].style) {
-    this.$node[0].style.transform = "rotate(" + this.rotationDegree + "deg)";
-  }
+  this.$node.css({Transform: 'rotate(' + this.rotationDegree  + 'deg)'});
 };
